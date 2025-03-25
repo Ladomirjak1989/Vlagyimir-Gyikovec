@@ -1,7 +1,7 @@
 'use client';
 import Slider from "@/components/Swiper/Swiper";
 import React, { useState } from "react";
-import { FaDraftingCompass, FaTools, FaBath, FaTimes, FaPlus } from "react-icons/fa";
+import { FaTools, FaBath, FaTimes, FaPlus, FaSolarPanel } from "react-icons/fa";
 import Image from 'next/image';
 import { motion } from "framer-motion";
 import { FaArrowDown } from "react-icons/fa";
@@ -9,11 +9,12 @@ import { FaArrowDown } from "react-icons/fa";
 
 const services = [
     {
-        icon: <FaDraftingCompass size={40} />,
-        title: "BOUWTEKENINGEN",
+        icon: <FaSolarPanel size={40} />,
+        title: "ZONNEPANELEN",
         description:
-            "Wij zorgen voor nauwkeurige bouwtekeningen in samenwerking met ervaren architecten en projectleiders. Of u deze aanlevert aan uw aannemer of het volledige traject aan ons overlaat — wij garanderen duidelijke plannen en slimme oplossingen.",
+            "Ik bied duurzame oplossingen met professionele installatie van zonnepanelen. Van advies tot plaatsing en onderhoud — ik help u besparen op energiekosten én bijdragen aan een groenere toekomst.",
     },
+
     {
         icon: <FaTools size={40} />,
         title: "BOUWVERGUNNINGEN",
@@ -24,8 +25,9 @@ const services = [
         icon: <FaBath size={40} />,
         title: "TOTALE RENOVATIE",
         description:
-            "Onze alles-in-één renovatieservice neemt het volledige projectmanagement voor zijn rekening. Van coördinatie op locatie tot kwaliteitscontrole en budgetbewaking – wij regelen alles, zodat u geen aparte aannemer hoeft in te schakelen.",
+            "Mijn alles-in-één renovatieservice omvat het volledige projectmanagement. Van coördinatie op locatie tot kwaliteitscontrole en budgetbewaking – ik regel alles, zodat u geen aparte aannemer hoeft in te schakelen.",
     },
+
 ];
 
 
@@ -77,9 +79,7 @@ const HomePage = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className={`group relative bg-gradient-to-br from-[#152248] to-[#A50044] border border-[#FFCD00] 
-        rounded-2xl p-6 text-center shadow-md hover:shadow-2xl 
-        hover:scale-[1.02] transition duration-300 ease-in-out animate-fade-up`}
+                            className={`group relative bg-gradient-to-br from-[#152248] to-[#A50044] border border-[#FFCD00] rounded-2xl p-6 text-center shadow-md hover:shadow-2xl hover:scale-[1.02] transition duration-300 ease-in-out animate-fade-up`}
                             style={{
                                 animationDelay: `${index * 0.15}s`,
                                 animationFillMode: "both",
